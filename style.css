@@ -1,1 +1,100 @@
-body { background: #080808; color: white; font-family: sans-serif; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #080808;
+  color: #F5F5F5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0C0C0C;
+  padding: 1em 2em;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav a {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #CDA253;
+}
+
+.hero {
+  padding: 4em 2em;
+  text-align: center;
+  background: #111;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5em;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.btn {
+  background: #CDA253;
+  color: #000;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.secondary {
+  background: #333;
+  color: #fff;
+  border: 1px solid #CDA253;
+}
+
+.btn:hover {
+  background: #b88d41;
+}
+
+.section {
+  padding: 3em 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+.image-feature img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1em;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2em 1em;
+  border-top: 1px solid #333;
+  color: #aaa;
+}
